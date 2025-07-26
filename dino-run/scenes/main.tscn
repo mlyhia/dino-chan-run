@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://dvi54vooptlvm"]
+
+[ext_resource type="Script" uid="uid://mlefcqcnralw" path="res://scripts/main.gd" id="1_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://k4kkj1vgabnw" path="res://scenes/bg.tscn" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dima8ta6vd5dk" path="res://scenes/ground.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://4wos8dh4kgg1" path="res://scenes/dino.tscn" id="3_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://det2gwme37sp2" path="res://scenes/hud.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://dsgc7xcbeoe0o" path="res://scenes/game_overLabel.tscn" id="6_tefeu"]
+
+[node name="main" type="Node"]
+script = ExtResource("1_jyhfs")
+
+[node name="bg" parent="." instance=ExtResource("1_sugp2")]
+
+[node name="ground" parent="." instance=ExtResource("2_jyhfs")]
+
+[node name="dino" parent="." instance=ExtResource("3_tbgi4")]
+position = Vector2(-61, 350)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="hud" parent="." instance=ExtResource("5_tbgi4")]
+
+[node name="gameOver" parent="." instance=ExtResource("6_tefeu")]
+process_mode = 2
