@@ -31,7 +31,7 @@ Versi web / Android mungkin akan datang di masa depan... siapa tahu~ 😆📱
 
 ## ✨ Cuplikan Game
 
-![Dino-chan](assets/preview/Screenshot 2025-07-27 073702.png)
+![Dino-chan](assets/preview/Screenshot2025-07-27073702.png)
 
 ---
 
